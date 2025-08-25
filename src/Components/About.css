@@ -1,0 +1,13 @@
+.about-container{
+    border: 1px solid black;
+    height: 1000px;
+    margin-right:100px;
+    margin-left:100px;
+}
+
+.about-content{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    line-height: 2;
+}

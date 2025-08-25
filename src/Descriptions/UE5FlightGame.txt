@@ -1,0 +1,10 @@
+A flight game project I have been working on for the past year, made in Unreal Engine 5 and coded with mostly C++. 
+As of right now the project has some of the flight mechanics that I want to keep, such as the AOA mechanic
+and basic air controls, however mechanics like thrust and stalling I haven't yet got up. 
+A real challenge of this project has been my computer, as it doesn't run Unreal Engine 5 the best and really requires me to care about every single tick and 
+graphical expendetures. In order to combat this, I switched most things about my project to C++ and routinely 
+checked for tasks that I could place elsewhere to prevent it from being ran too often, increasing performance on my computer.
+This project has also taught me to improve code now instead of later in order to prevent more time taken on trying to fix bugs or implement something new.
+Countless times I have done a task, which I would then practically remove as I had thought of a better way of handling it, whether it be scalability
+or reliability, which took time out now but would definitely save a lot of time in the future.
+I've also gained experience with Blender and Photoshop through working on this project.

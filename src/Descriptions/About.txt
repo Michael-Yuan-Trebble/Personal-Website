@@ -1,0 +1,9 @@
+Hi, I'm Michael, I am a third year Computer Science major at Rutgers University - New Brunswick, with a planned minor in Physics.
+I'm passionate about expanding my programming skills, whether it be refining the current languages I know or expanding my catalog.
+
+One of my biggest personal projects is a flight simulator I'm actively developing in Unreal Engine 5. 
+It is written primarily in C++ with a bit of Blueprint scripting and the models and effects are created in Blender.
+This project has tested my technical skills and creativity, most noteably challenging my optimization skills due to the engine being very resource intensive.
+
+Outside of coursework and projects, I love tackling new coding challenges, exploring new emerging technologies, and playing around with different development tools.
+
