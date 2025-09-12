@@ -5,6 +5,8 @@ import { useState } from 'react'
 import {createRoot} from "react-dom/client"
 import Project from './Components/Project'
 import About from './Components/About'
+import projectsData from './Components/Projects/Projects'
+import courseworkData from './Components/Projects/Coursework'
 
 const rootDomElement = document.getElementById("root")
 console.log("rootDomElement =",rootDomElement)
@@ -60,6 +62,12 @@ function Tabs(){
                 >
                     Projects
                 </button>
+                <button
+                className={activeTab === 'classwork' ? 'tab-btn active' : 'tab-btn'} 
+                onClick={()=>setActiveTab('classwork')}
+                >
+                    Class Work
+                </button>
                 <button 
                 className={activeTab === 'contact' ? 'tab-btn active' : 'tab-btn'} 
                 onClick={()=>setActiveTab('contact')}
@@ -70,7 +78,8 @@ function Tabs(){
 
             <div className='tab-content'>
                 {activeTab==='about' && (<About/>)}
-                {activeTab==='projects' && (<Project/>)}
+                {activeTab==='projects' && (<Project items={projectsData}/>)}
+                {activeTab==='classwork' && (<Project items={courseworkData}/>)}
                 {activeTab==='contact' && (<Contact/>)}
             </div>
         </>
