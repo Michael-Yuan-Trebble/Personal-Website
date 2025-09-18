@@ -14,7 +14,8 @@ const courseworkData = [
         longDesc: CS50txt,
         link: "https://github.com/Michael-Yuan-Trebble/CS50P-Projects",
         containsLink: true,
-        languageTags: ["Python"]
+        languageTags: ["Python"],
+        otherTags: ["PyTest"]
     },
     {
         image: MatlabImg,
@@ -64,6 +65,12 @@ const courseworkData = [
         containsLink: false,
         languageTags: ["Python"],
         otherTags: ["Linux"]
+    },
+    {
+        title: "Rutgers NB - Systems Programming",
+        shortDesc: "Rutgers CS 214",
+        containsLink: false,
+        languageTags: ["C"]
     }
 ]
 

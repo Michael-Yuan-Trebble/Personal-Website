@@ -1,6 +1,4 @@
 import './index.css'
-import React from 'react'
-import { createElement } from "react"
 import { useState } from 'react'
 import {createRoot} from "react-dom/client"
 import Project from './Components/Project'
@@ -63,10 +61,10 @@ function Tabs(){
                     Projects
                 </button>
                 <button
-                className={activeTab === 'classwork' ? 'tab-btn active' : 'tab-btn'} 
-                onClick={()=>setActiveTab('classwork')}
+                className={activeTab === 'education' ? 'tab-btn active' : 'tab-btn'} 
+                onClick={()=>setActiveTab('education')}
                 >
-                    Class Work
+                    Education
                 </button>
                 <button 
                 className={activeTab === 'contact' ? 'tab-btn active' : 'tab-btn'} 
@@ -79,7 +77,7 @@ function Tabs(){
             <div className='tab-content'>
                 {activeTab==='about' && (<About/>)}
                 {activeTab==='projects' && (<Project items={projectsData}/>)}
-                {activeTab==='classwork' && (<Project items={courseworkData}/>)}
+                {activeTab==='education' && (<Project items={courseworkData}/>)}
                 {activeTab==='contact' && (<Contact/>)}
             </div>
         </>
@@ -92,13 +90,11 @@ function Contact(){
         <>
             <div className='container'>
                 <p>
-                    Gmail
+                    <a href="michaelwmyuan@gmail.com">Email</a>
                 </p>
-                <a href="michaelwmyuan@gmail.com">Email</a>
                 <p>
-                    LinkedIn
+                    <a href="" target="_blank">LinkedIn</a>
                 </p>
-                <a href="" target="_blank"></a>
             </div>
         </>
     )
@@ -108,7 +104,7 @@ function Bottom(){
     return(
         <>
             <div className = "bottom">
-                Test
+                Built in React with Vite
             </div>
         </>
     )

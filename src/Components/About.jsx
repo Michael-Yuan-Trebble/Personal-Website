@@ -1,4 +1,3 @@
-import { useState } from "react"
 import './About.css'
 import Abouttxt from '../Descriptions/About.txt?raw'
 
@@ -9,7 +8,7 @@ const About = () =>{
                 <div className="image">
                     <img src=""/>
                 </div>
-                <div className="about-content">
+                <div className="about-content" style={{whiteSpace: "pre-line"}}>
                     {Abouttxt}
                 </div>
             </div>
