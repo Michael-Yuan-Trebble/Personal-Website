@@ -26,15 +26,15 @@ const Project = ({ items = [] }) => {
 
   return (
     <div>
-      <div className="flex items-center justify-center pb-10 gap-20">
-        <select value={selectedTag} onChange={e => setSelectedTag(e.target.value)}>
+      <div className="flex items-center justify-center pb-10 gap-20 text-lg">
+        <select value={selectedTag} onChange={e => setSelectedTag(e.target.value)} className="bg-gray-300 rounded">
           <option value="">All Languages</option>
           {allLanguageTags.map(tag => (
             <option key={tag} value={tag}>{tag}</option>
           ))}
         </select>
 
-        <select value={selectedOtherTag} onChange={e => setSelectedOtherTag(e.target.value)}>
+        <select value={selectedOtherTag} onChange={e => setSelectedOtherTag(e.target.value)} className="bg-gray-300 rounded">
           <option value="">All Frameworks And Tools</option>
           {allOtherTags.map(tag => (
             <option key={tag} value={tag}>{tag}</option>
@@ -44,20 +44,19 @@ const Project = ({ items = [] }) => {
 
       <div className='border border-black h-auto min-h-[500px] mr-25 ml-25 p-10'>
         {sortedProjects.length > 0 ? (
-          <div className="flex flex-col gap-25 overflow-x-auto pt-10 pb-10">{
-                sortedProjects.map(project => (
-              <div className='leading-15 flex-shrink-0' key={project.title}>
-                <Card
-                  image={project.image || null}
-                  title={project.title}
-                  shortDesc={project.shortDesc}
-                  imageCaption={project.imageCaption}
-                  longDesc={project.longDesc}
-                  link={project.link}
-                  containsLink={project.containsLink}
-                />
-              </div>
-          ))}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 pt-10 pb-10">
+            {sortedProjects.map(project => (
+              <Card
+                key={project.title}
+                image={project.image || null}
+                title={project.title}
+                shortDesc={project.shortDesc}
+                imageCaption={project.imageCaption}
+                longDesc={project.longDesc}
+                link={project.link}
+                containsLink={project.containsLink}
+              />
+            ))}
           </div>
         ) : (
           <div className='flex flex-col gap-25 overflow-x-auto pt-10 pb-10 leading-15 flex-shrink-0'>

@@ -33,11 +33,11 @@ function Page(){
 function Header(){
     return(
         <>
-            <div className="mt-[100px] text-[30px] text-center block mx-auto">
+            <div className="mt-24 text-[30px] text-center block mx-auto">
                 <h1>Michael Yuan</h1>
                 <h2>Rutgers University - New Brunswick | CS Major</h2>
                 <h3>
-                    <a href="https://github.com/Michael-Yuan-Trebble" target="_blank">Github Page</a>
+                    <a href="https://github.com/Michael-Yuan-Trebble" target="_blank" className='text-blue-700 hover:text-blue-900 underline'>Github</a>
                 </h3> 
             </div>
         </>
@@ -49,7 +49,7 @@ function Tabs(){
 
     return(
         <>
-            <div className="text-base min-w-[100px] h-10 ml-[100px] mr-[100px] mt-[100px] mb-[10px] flex justify-center gap-[50px]">
+            <div className="text-base min-w-24 h-10 ml-24 mr-24 mt-24 mb-3 flex justify-center gap-5">
             {["about", "projects", "education", "contact"].map((tab) => (
                 <button
                 key={tab}
@@ -63,7 +63,7 @@ function Tabs(){
             ))}
             </div>
 
-            <div className='pl-50px pr-50px pt-10'>
+            <div className='pt-10'>
                 {activeTab==='about' && (<About/>)}
                 {activeTab==='projects' && (<Project items={projectsData}/>)}
                 {activeTab==='education' && (<Project items={courseworkData}/>)}
@@ -77,7 +77,7 @@ function Tabs(){
 function Contact(){
     return(
         <>
-            <div className='container'>
+            <div className="mr-24 ml-24 h-200 border">
                 <p>
                     <a href="michaelwmyuan@gmail.com">Email</a>
                 </p>
@@ -92,7 +92,7 @@ function Contact(){
 function Bottom(){
     return(
         <>
-            <div className = "bottom">
+            <div className = "mr-24 ml-24 pt-5">
                 Built in React with Vite
             </div>
         </>

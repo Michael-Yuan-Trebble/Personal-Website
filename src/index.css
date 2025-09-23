@@ -4,15 +4,3 @@ body{
     background-color: #f9f9f9;
     font-family: serif;
 }
-.content{
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top:50px;
-}
-
-.container{
-    border: 1px solid black;
-    height:1000px;
-    margin-right:100px;
-    margin-left:100px;
-}

@@ -10,18 +10,18 @@ const Card = ({image, title, shortDesc, imageCaption, longDesc, link,containsLin
     <div className={cardBase} onClick={() => setIsOpen(!isOpen)}>
       <div className="flex flex-col">
         <div className="flex column align-middle max-w-150 m-3 relative">
-          <img src={image} alt={title} className="w-full h-auto rounded" />
+          <img src={image} alt={title} className="w-100 h-auto rounded" />
 
           <div
             className={`absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-white p-2 text-sm transition-opacity duration-300 ${
-              isOpen ? 'opacity-100' : 'opacity-0'
+              isOpen ? 'opacity-80' : 'opacity-0'
             }`}
           >
             {imageCaption}
           </div>
         </div>
 
-        <div className="text-black flex flex-col content-start mt-24 pl-5 flex-1">
+        <div className="text-black flex flex-col content-start mt-4 pl-5 flex-1">
           <h3 className="text-lg font-bold">{title}</h3>
           <p className="text-sm">{shortDesc}</p>
         </div>

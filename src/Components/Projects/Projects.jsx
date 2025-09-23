@@ -20,6 +20,7 @@ const projectsData = [
         image: TASImg,
         title: "Python Aircraft Flight Dyanmics Calculator & Visualizer",
         shortDesc: "A Python PyQt5 application reading in user inputted information via a JSON and outputting graphs via PyQtGraph about relevant information",
+        imageCaption: "IAS vs TAS Difference graph",
         link: "https://github.com/Michael-Yuan-Trebble/Flight-Model-Calculator",
         containsLink: true,
         languageTags: ["Python 3"],
@@ -29,6 +30,7 @@ const projectsData = [
         image: MultiImg,
         title: "C++ Multithread Sensor",
         shortDesc: "A C++ program using the multithreading capabilites of C++ to gather random data about sensor readings and storing in a CSV.",
+        imageCaption: "Code snapshot",
         link: "https://github.com/Michael-Yuan-Trebble/Multithread-Sensor",
         containsLink: true,
         languageTags: ["C++"]
@@ -37,6 +39,7 @@ const projectsData = [
         image: JoystickImg,
         title: "Joystick to Mouse Input Application",
         shortDesc: "A C++ Qt6 application converting a plugged in Joystick input to a Desktop Mouse output.",
+        imageCaption: "Circle visual for joystick",
         link: "https://github.com/Michael-Yuan-Trebble/JoystickToMouseApplication",
         containsLink: true,
         languageTags: ["C++"],

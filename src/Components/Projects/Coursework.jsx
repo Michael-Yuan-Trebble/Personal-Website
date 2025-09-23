@@ -20,6 +20,7 @@ const courseworkData = [
     {
         image: MatlabImg,
         title: "Matlab Onramp",
+        imageCaption: "Matlab Certification",
         shortDesc: "Matlab intro course",
         containsLink: false,
         languageTags: ["Matlab"]
@@ -27,6 +28,7 @@ const courseworkData = [
     {
         image: SimulinkImg,
         title: "Simulink Onramp",
+        imageCaption: "Simulink Certification",
         shortDesc: "Simulink intro course",
         containsLink: false,
         languageTags: ["Simulink"]
@@ -34,7 +36,8 @@ const courseworkData = [
     {
         image: GIACImg,
         title: "GIAC Cert",
-        shortDesc: "GIAC",
+        imageCaption: "GFACT Certification",
+        shortDesc: "GFACT",
         containsLink: false,
         languageTags: ["SQLite"],
         otherTags: ["Linux", "Wireshark", "VMWare"]
