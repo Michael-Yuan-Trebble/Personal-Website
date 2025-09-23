@@ -10,7 +10,7 @@ const courseworkData = [
         image: CS50P,
         title: "HarvardX CS50P",
         shortDesc: "Something",
-        imageCaption: "Model in Blender with UV map",
+        imageCaption: "Harvard's CS50P Course",
         longDesc: CS50txt,
         link: "https://github.com/Michael-Yuan-Trebble/CS50P-Projects",
         containsLink: true,

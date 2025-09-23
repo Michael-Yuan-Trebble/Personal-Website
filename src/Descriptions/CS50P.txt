@@ -1,3 +1,2 @@
 HarvardX's CS50P class had caused my transition to Python to be incredibly smooth. Learning about how Python handles File I/O, File Manipulations like PDFs and 
-.jpegs, and using different packages with both the natively inherited ones from python and installing ones online. 
-
+.jpegs, and using different packages with both the natively inherited ones from python and installing ones online. Also learned how to test programs and functions with PyTest.

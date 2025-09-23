@@ -18,6 +18,8 @@ if(!rootDomElement){
 )
 }
 
+const tabBase = "bg-[white] w-500 rounded-lg p-4 border-1 flex justify-center items-center cursor-pointer "
+
 function Page(){
     return(
         <>
@@ -31,7 +33,7 @@ function Page(){
 function Header(){
     return(
         <>
-            <div className="title">
+            <div className="mt-[100px] text-[30px] text-center block mx-auto">
                 <h1>Michael Yuan</h1>
                 <h2>Rutgers University - New Brunswick | CS Major</h2>
                 <h3>
@@ -47,34 +49,21 @@ function Tabs(){
 
     return(
         <>
-            <div className="tabs">
-                <button 
-                className={activeTab === 'about' ? 'tab-btn active' : 'tab-btn'} 
-                onClick={()=>setActiveTab('about')}
-                >
-                    About
-                </button>
-                <button 
-                className={activeTab === 'projects' ? 'tab-btn active' : 'tab-btn'} 
-                onClick={()=>setActiveTab('projects')}
-                >
-                    Projects
-                </button>
+            <div className="text-base min-w-[100px] h-10 ml-[100px] mr-[100px] mt-[100px] mb-[10px] flex justify-center gap-[50px]">
+            {["about", "projects", "education", "contact"].map((tab) => (
                 <button
-                className={activeTab === 'education' ? 'tab-btn active' : 'tab-btn'} 
-                onClick={()=>setActiveTab('education')}
+                key={tab}
+                className={`${tabBase} ${
+                    activeTab === tab ? "bg-gray-200 font-bold" : ""
+                }`}
+                onClick={() => setActiveTab(tab)}
                 >
-                    Education
+                {tab.charAt(0).toUpperCase() + tab.slice(1)}
                 </button>
-                <button 
-                className={activeTab === 'contact' ? 'tab-btn active' : 'tab-btn'} 
-                onClick={()=>setActiveTab('contact')}
-                >
-                    Contact
-                </button>
+            ))}
             </div>
 
-            <div className='tab-content'>
+            <div className='pl-50px pr-50px pt-10'>
                 {activeTab==='about' && (<About/>)}
                 {activeTab==='projects' && (<Project items={projectsData}/>)}
                 {activeTab==='education' && (<Project items={courseworkData}/>)}
